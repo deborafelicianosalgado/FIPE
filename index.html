@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta Tabela FIPE</title>
+</head>
+
+<body>
+    <h1>Consulta Tabela FIPE</h1>
+
+    <div>
+        <label for="marca">Marca:</label>
+        <select id="marca" onchange="listarModelos()">
+            <option value="">Selecione uma marca</option>
+        </select>
+    </div>
+    <br>
+
+    <div>
+        <label for="modelo">Modelo:</label>
+        <select id="modelo" onchange="listarAnos()">
+            <option value="">Selecione um modelo</option>
+        </select>
+    </div>
+    <br>
+
+    <div>
+        <label for="ano">Ano:</label>
+        <select id="ano">
+            <option value="">Selecione o ano</option>
+        </select>
+    </div>
+    <br>
+
+    <button id="btnConsultar" onclick="consultarPreco()">Consultar Preço</button>
+
+    <div id="status"></div>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
